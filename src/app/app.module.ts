@@ -9,6 +9,13 @@ import { IconSetComponent } from '../icon-set.component';
 import { SparkAngularModule } from "@sparkdesignsystem/spark-angular";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
+
+export function playerFactory() {
+  return player;
+}
+
 @NgModule({
   declarations: [AppComponent,IconSetComponent],
   imports: [
@@ -18,8 +25,10 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    LottieModule.forRoot({ player: playerFactory })
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule {}

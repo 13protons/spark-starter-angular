@@ -1,5 +1,18 @@
 <sprk-icon-set></sprk-icon-set>
 <main class="sprk-o-CenteredColumn sprk-o-Box sprk-u-ptl" data-sprk-main>
-  <h1 class="sprk-b-TypeDisplayTwo sprk-b-PageTitle">Hello, Spark! 👋</h1>
-  <h1 class="sprk-b-TypeDisplaySix sprk-u-mtl">Add components here</h1>
+  <div id="anim" lottie [options]="options" (animationCreated)="animationCreated($event)"></div>
+
+  <sprk-stack splitAt='small'>
+    <div
+      sprkStackItem
+      class='sprk-o-Stack__item--half@s sprk-u-pvh'
+    >
+      <h1 class="sprk-b-TypeDisplayOne">Sorry, we’re<br> having problems<br> finding that page.</h1>
+      <p sprkHeading variant="displayFour" class="sprk-u-FontWeight--normal sprk-u-pvl">
+        We may be experiencing some technical difficulties. Check that your URL is correct or try returning to the homepage.
+      </p>
+    </div>
+  
+  </sprk-stack>
+
 </main>

@@ -20,6 +20,8 @@
     "@angular/platform-browser-dynamic": "~9.1.0",
     "@angular/router": "~9.1.0",
     "classlist.js": "^1.1.20150312",
+    "lottie-web": "^5.7.6",
+    "ngx-lottie": "^6.4.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.11.1",
     "zone.js": "~0.10.2"
